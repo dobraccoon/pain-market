@@ -1,9 +1,9 @@
-package ru.avsamoylov.painmarket1.service;
+package ru.avsamoylov.painmarket1.orders;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-import ru.avsamoylov.painmarket1.product.Order;
-import ru.avsamoylov.painmarket1.repository.OrderRepository;
+import ru.avsamoylov.painmarket1.orders.Order;
+import ru.avsamoylov.painmarket1.orders.OrderRepository;
 
 @Service
 @AllArgsConstructor

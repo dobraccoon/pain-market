@@ -1,4 +1,4 @@
-package ru.avsamoylov.painmarket1.product;
+package ru.avsamoylov.painmarket1.customers;
 
 import lombok.Getter;
 

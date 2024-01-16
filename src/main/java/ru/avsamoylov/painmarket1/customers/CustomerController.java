@@ -1,12 +1,13 @@
-package ru.avsamoylov.painmarket1.controller;
+package ru.avsamoylov.painmarket1.customers;
 
 import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import ru.avsamoylov.painmarket1.product.Customer;
-import ru.avsamoylov.painmarket1.service.CustomerService;
+
+import java.util.Random;
 
 @RestController
 @AllArgsConstructor
@@ -17,5 +18,15 @@ public class CustomerController {
     @PostMapping
     public Customer saveCustomer(@RequestBody Customer customer){
        return service.saveCustomer(customer);
+    }
+
+    @Repository
+    @AllArgsConstructor
+    public static class CustomerRepository {
+        public Customer saveCustomer(Customer customer) {
+            return new Customer(
+                    new Random().nextLong(), customer.getEmail()
+            );
+        }
     }
 }

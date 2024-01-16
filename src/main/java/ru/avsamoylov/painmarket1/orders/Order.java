@@ -1,4 +1,4 @@
-package ru.avsamoylov.painmarket1.product;
+package ru.avsamoylov.painmarket1.orders;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

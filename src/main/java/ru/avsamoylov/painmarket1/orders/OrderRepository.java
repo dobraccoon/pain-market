@@ -1,8 +1,8 @@
-package ru.avsamoylov.painmarket1.repository;
+package ru.avsamoylov.painmarket1.orders;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Repository;
-import ru.avsamoylov.painmarket1.product.Order;
+import ru.avsamoylov.painmarket1.orders.Order;
 
 import java.util.Random;
 

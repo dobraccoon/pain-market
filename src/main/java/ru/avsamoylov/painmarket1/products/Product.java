@@ -1,6 +1,5 @@
-package ru.avsamoylov.painmarket1.product;
+package ru.avsamoylov.painmarket1.products;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @Getter
